@@ -1,0 +1,8 @@
+#!/bin/bash
+
+wmctrl -s 0
+DISPLAY=:0.0  google-chrome --new-window 
+sleep 5
+
+wmctrl -s 1
+google-chrome --new-window web.whatsapp.com gmail.com twitter.com music.youtube.com
