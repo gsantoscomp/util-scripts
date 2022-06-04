@@ -4,4 +4,4 @@ directory="$(cd "$(dirname $1)"; pwd)"
 file="$(basename -- $1)"
 filename="${file%.*}"
 
-echo "ffmpeg -i $directory/$file -movflags faststart -preset fast ./$filename.mp4"
+ffmpeg -i $directory/$file -movflags faststart -preset fast $directory/$filename.mp4
